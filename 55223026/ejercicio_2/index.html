@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Descuentos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Calculadora de Descuentos</h1>
+    <form action="calcular.php" method="POST">
+        <label for="producto">Nombre del producto:</label>
+        <input type="text" id="producto" name="producto" required>
+
+        <label for="categoria">Categoría:</label>
+        <select id="categoria" name="categoria" required>
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+        </select>
+
+        <label for="precio">Precio unitario:</label>
+        <input type="number" id="precio" name="precio" step="0.01" required>
+
+        <label for="unidades">Unidades:</label>
+        <input type="number" id="unidades" name="unidades" required>
+
+        <button type="submit">Calcular</button>
+    </form>
+</body>
+</html>
